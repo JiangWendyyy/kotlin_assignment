@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.kotlin_assignment.NormalProductTest1" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-22T12:56:23" hostname="jiangdeMacBook-Pro.local" time="0.037">
+  <properties/>
+  <testcase name="displayProductDetails()" classname="com.thoughtworks.kotlin_assignment.NormalProductTest1" time="0.037"/>
+  <system-out><![CDATA[NORMAL 商品 id为 1,sku为：ABC123,名称为：Electronic Watch,价格为：299.99,图片为：image2.jpg,库存为：200
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

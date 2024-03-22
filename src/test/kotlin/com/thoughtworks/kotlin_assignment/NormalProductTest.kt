@@ -5,7 +5,7 @@ import com.thoughtworks.kotlin_assignment.Entity.NormalProduct
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class NormalProductTest1{
+class NormalProductTest{
 
 
     @Test
@@ -13,7 +13,7 @@ class NormalProductTest1{
         var product = givenProduct()
         val result = product.displayProductDetails()
         println(result)
-        assertTrue(result.contentEquals("普通商品1:sku为：ABC123,价格为：299.99,库存为：200"))
+        assertTrue(result.contentEquals("NORMAL 商品 id为 1,sku为：ABC123,名称为：Electronic Watch,价格为：299.99,图片为：image2.jpg,库存为：200"))
     }
     private fun givenProduct(): NormalProduct {
         val inventories = listOf(
