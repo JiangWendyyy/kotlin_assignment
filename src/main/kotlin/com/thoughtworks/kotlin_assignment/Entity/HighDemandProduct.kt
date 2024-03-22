@@ -4,29 +4,36 @@ private const val ORIGINAL_PRICE_INVENTORY = 100
 private const val PERCENT_30_UP_PRICE_INVENTORY = 30
 
 class HighDemandProduct(
-    override val id: String,
+    override val id: Int,
     override val SKU: String,
     override val name: String,
-    override val price: Double,
-    override val type: String,
-    override val image: String,
-    private var inventories: List<Inventory>,
+    override var price: Double,
+    override val type: String = "HIGH_DEMAND",
+    override val image: String
 ) : Product(id,SKU, name, price, type,image) {
-    fun displayProductDetails():String{
-        val price = calculatePrice()
+    private var inventories: List<Inventory> = emptyList()
+    override fun displayProductDetails():String{
         val inventory = getInventory()
-        return "稀缺商品$id:sku为：$SKU,价格为：$price,库存为：$inventory"
+        return super.displayProductDetails()+"库存为：$inventory"
     }
-    override fun calculatePrice(): Double{
+    fun calculatePrice(){
         val inventory = this.getInventory()
-        return when{
+        val price: Double = when {
             inventory > ORIGINAL_PRICE_INVENTORY -> price
-            inventory in (PERCENT_30_UP_PRICE_INVENTORY +1 )..ORIGINAL_PRICE_INVENTORY -> this.price * 1.2
+            inventory in (PERCENT_30_UP_PRICE_INVENTORY + 1)..ORIGINAL_PRICE_INVENTORY -> this.price * 1.2
             inventory <= PERCENT_30_UP_PRICE_INVENTORY -> price * 1.5
-            else -> {price}
+            else -> {
+                price
+            }
         }
+        this.price = price
     }
-    override fun getInventory(): Int = this.inventories.sumOf { it.quantity }
+    private fun getInventory(): Int {
+        if(inventories.isEmpty()){
+            return 0
+        }
+        return this.inventories.sumOf { it.quantity }
+    }
 
     fun setInventoryList(inventoryList:List<Inventory>){
         this.inventories = inventoryList
