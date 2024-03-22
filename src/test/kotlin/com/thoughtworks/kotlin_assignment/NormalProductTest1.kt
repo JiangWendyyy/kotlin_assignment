@@ -20,6 +20,6 @@ class NormalProductTest1{
             Inventory("1","ABC123","CN_NORTH",120),
             Inventory("1","ABC123","US_WEST",80)
         )
-        return NormalProduct("1", "ABC123", "Electronic Watch", 299.99, "NORMAL", "image2.jpg", inventories)
+        return NormalProduct(1, "ABC123", "Electronic Watch", 299.99, "NORMAL", "image2.jpg", inventories)
     }
 }
