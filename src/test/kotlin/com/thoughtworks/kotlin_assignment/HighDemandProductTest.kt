@@ -9,7 +9,7 @@ class HighDemandProductTest{
 
 
     @Test
-    fun `displayProductDetails`(){
+    fun `displayProductDetails,check price`(){
         var products = givenProductList()
         products.forEach { var calculatePrice = it.calculatePrice()
         it.setCalculatedPrice(calculatePrice)}

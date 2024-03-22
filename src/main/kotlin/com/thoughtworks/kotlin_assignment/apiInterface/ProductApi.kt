@@ -1,7 +1,6 @@
-package com.thoughtworks.kotlin_assignment.service
+package com.thoughtworks.kotlin_assignment.apiInterface
 
 import com.thoughtworks.kotlin_assignment.Entity.DataProduct
-import com.thoughtworks.kotlin_assignment.Entity.Product
 import retrofit2.Response
 import retrofit2.http.GET
 
