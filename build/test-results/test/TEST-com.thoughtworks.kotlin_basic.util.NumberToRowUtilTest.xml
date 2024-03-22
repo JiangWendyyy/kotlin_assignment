@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.kotlin_basic.util.NumberToRowUtilTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-03-19T13:02:21" hostname="jiangdeMacBook-Pro.local" time="0.038">
+  <properties/>
+  <testcase name="700,5 to ZX,ZY,ZZ,AAA,AAB()" classname="com.thoughtworks.kotlin_basic.util.NumberToRowUtilTest" time="0.026"/>
+  <testcase name="1,2 to A,B()" classname="com.thoughtworks.kotlin_basic.util.NumberToRowUtilTest" time="0.001"/>
+  <testcase name="26,3 to Z,AA,AB()" classname="com.thoughtworks.kotlin_basic.util.NumberToRowUtilTest" time="0.001"/>
+  <testcase name="1,1 to A()" classname="com.thoughtworks.kotlin_basic.util.NumberToRowUtilTest" time="0.001"/>
+  <testcase name="more than ZZZ()" classname="com.thoughtworks.kotlin_basic.util.NumberToRowUtilTest" time="0.002"/>
+  <testcase name="18273,6 to ZZU,ZZV,ZZW,ZZX,ZZY,ZZZ()" classname="com.thoughtworks.kotlin_basic.util.NumberToRowUtilTest" time="0.001"/>
+  <system-out><![CDATA[[ZX, ZY, ZZ, AAA, AAB]
+[A]
+[Z, AA, AB]
+[A]
+[ZZU, ZZV, ZZW, ZZX, ZZY, ZZZ]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
