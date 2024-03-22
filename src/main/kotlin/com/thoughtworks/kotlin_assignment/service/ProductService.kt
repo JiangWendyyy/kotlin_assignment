@@ -4,6 +4,10 @@ import com.thoughtworks.kotlin_assignment.Entity.*
 import com.thoughtworks.kotlin_assignment.RetrofitClient
 import com.thoughtworks.kotlin_assignment.apiInterface.ProductApi
 
+private const val NORMAL_TYPE = "NORMAL"
+
+private const val HIGH_DEMAND_TYPE = "HIGH_DEMAND"
+
 class ProductService {
 
     private val retrofit = RetrofitClient.getInstance()
@@ -41,12 +45,12 @@ class ProductService {
     private fun convertToProduct(dataProduct: List<DataProduct>): List<Product> {
         return dataProduct.map {
             val product = when (it.type) {
-                "NORMAL" -> NormalProduct(
-                    id = it.id, SKU = it.SKU, name = it.name, price = it.price, image = it.image, type = "NORMAL"
+                NORMAL_TYPE -> NormalProduct(
+                    id = it.id, SKU = it.SKU, name = it.name, price = it.price, image = it.image, type = NORMAL_TYPE
                 )
 
-                "HIGH_DEMAND" -> HighDemandProduct(
-                    id = it.id, SKU = it.SKU, name = it.name, price = it.price, image = it.image, type = "HIGH_DEMAND"
+                HIGH_DEMAND_TYPE -> HighDemandProduct(
+                    id = it.id, SKU = it.SKU, name = it.name, price = it.price, image = it.image, type = HIGH_DEMAND_TYPE
                 )
 
                 else -> Product(

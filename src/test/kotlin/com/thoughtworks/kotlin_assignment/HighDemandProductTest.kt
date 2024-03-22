@@ -9,9 +9,9 @@ class HighDemandProductTest{
 
 
     @Test
-    fun `displayProductDetails,check price`(){
-        var products = givenProductList()
-        products.forEach { var calculatePrice = it.calculatePrice()
+    fun `display product details,check price`(){
+        val products = givenProductList()
+        products.forEach { val calculatePrice = it.calculatePrice()
         it.setCalculatedPrice(calculatePrice)}
         val result1 = products[0].displayProductDetails()
         val result2 = products[1].displayProductDetails()

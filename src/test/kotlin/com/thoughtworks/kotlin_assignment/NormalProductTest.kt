@@ -9,8 +9,8 @@ class NormalProductTest{
 
 
     @Test
-    fun `displayProductDetails`(){
-        var product = givenProduct()
+    fun `display product details`(){
+        val product = givenProduct()
         val result = product.displayProductDetails()
         println(result)
         assertTrue(result.contentEquals("NORMAL 商品 id为 1,sku为：ABC123,名称为：Electronic Watch,价格为：299.99,图片为：image2.jpg,库存为：200"))

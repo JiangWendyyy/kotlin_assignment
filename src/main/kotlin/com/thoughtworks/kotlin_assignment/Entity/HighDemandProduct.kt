@@ -4,12 +4,13 @@ private const val ORIGINAL_PRICE_INVENTORY = 100
 private const val PERCENT_30_UP_PRICE_INVENTORY = 30
 
 
+
 class HighDemandProduct(
     override val id: Int,
     override val SKU: String,
     override val name: String,
     override var price: Double,
-    override val type: String = "HIGH_DEMAND",
+    override val type: String,
     override val image: String,
     override var inventories: List<Inventory> = emptyList()
 ) : Product(id,SKU, name, price, type,image) {
