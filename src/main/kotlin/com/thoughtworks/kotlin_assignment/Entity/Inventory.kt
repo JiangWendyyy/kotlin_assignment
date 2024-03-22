@@ -6,4 +6,4 @@ class Inventory(
     val zone: String,
     val quantity: Int
 ){
-override fun toString() ="id:$id,SKU:$SKU,zone:$zone,quantity:$quantity"}
+override fun toString() ="id:$id,SKU:$SKU,zone:$zone,quantity:$quantity\n"}

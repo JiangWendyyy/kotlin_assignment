@@ -3,10 +3,12 @@ import com.thoughtworks.kotlin_assignment.service.ProductService
 
 suspend fun main() {
 
+    println("-------------库存数据------------")
     // 发起 GET 请求获取库存列表
     val inventoryService = InventoryService()
     val allInventories = inventoryService.getAllInventories()
 
+    println("-------------产品数据------------")
     // 发起 GET 请求获取产品列表
     val productService = ProductService()
     val allProducts = productService.getAllProducts()

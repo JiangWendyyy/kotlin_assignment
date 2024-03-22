@@ -1,0 +1,4 @@
+~HIGH_DEMAND 商品 id为 1,sku为：ABC1,名称为：Electronic Watch,价格为：450.0,图片为：image2.jpg,库存为：30
+HIGH_DEMAND 商品 id为 2,sku为：ABC2,名称为：Electronic Watch,价格为：360.0,图片为：image2.jpg,库存为：100
+HIGH_DEMAND 商品 id为 3,sku为：ABC3,名称为：Electronic Watch,价格为：300.0,图片为：image2.jpg,库存为：110
+}NORMAL 商品 id为 1,sku为：ABC123,名称为：Electronic Watch,价格为：299.99,图片为：image2.jpg,库存为：200
