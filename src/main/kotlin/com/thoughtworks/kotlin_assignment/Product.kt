@@ -9,4 +9,7 @@ abstract class Product (
     open val image: String
 ){
     abstract fun displayProductDetails(): String
+    abstract fun calculatePrice(): Double
+
+    abstract fun getInventory(): Int
 }
