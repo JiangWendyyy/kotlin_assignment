@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.kotlin_assignment.NormalProductTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-22T08:43:12" hostname="jiangdeMacBook-Pro.local" time="0.03">
+  <properties/>
+  <testcase name="displayProductDetails()" classname="com.thoughtworks.kotlin_assignment.NormalProductTest" time="0.03"/>
+  <system-out><![CDATA[普通商品1:sku为：ABC123,价格为：299.99,库存为：200
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,9 +1,11 @@
 package com.thoughtworks.kotlin_assignment
 
+import com.thoughtworks.kotlin_assignment.Entity.HighDemandProduct
+import com.thoughtworks.kotlin_assignment.Entity.Inventory
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class HighDemandProductTest{
+class HighDemandProductTest1{
 
 
     @Test
@@ -20,13 +22,20 @@ class HighDemandProductTest{
         assertTrue(result3.contentEquals("稀缺商品3:sku为：ABC3,价格为：300.0,库存为：110"))
     }
     private fun givenProductList():List<HighDemandProduct> {
-        val inventories1 = listOf(Inventory("1","ABC1","CN_NORTH",20),
-            Inventory("1","ABC123","US_WEST",10))
-        val inventories2 = listOf(Inventory("2","ABC2","CN_NORTH",50),
-            Inventory("1","ABC123","US_WEST",50))
-        val inventories3 = listOf(Inventory("3","ABC3","CN_NORTH",60),
-            Inventory("1","ABC123","US_WEST",50))
-        return listOf(HighDemandProduct("1", "ABC1", "Electronic Watch", 300.00, "HIGH_DEMAND", "image2.jpg", inventories1),
+        val inventories1 = listOf(
+            Inventory("1","ABC1","CN_NORTH",20),
+            Inventory("1","ABC123","US_WEST",10)
+        )
+        val inventories2 = listOf(
+            Inventory("2","ABC2","CN_NORTH",50),
+            Inventory("1","ABC123","US_WEST",50)
+        )
+        val inventories3 = listOf(
+            Inventory("3","ABC3","CN_NORTH",60),
+            Inventory("1","ABC123","US_WEST",50)
+        )
+        return listOf(
+            HighDemandProduct("1", "ABC1", "Electronic Watch", 300.00, "HIGH_DEMAND", "image2.jpg", inventories1),
             HighDemandProduct("2", "ABC2", "Electronic Watch", 300.00, "HIGH_DEMAND", "image2.jpg", inventories2),
                 HighDemandProduct(
                     "3",
@@ -35,6 +44,7 @@ class HighDemandProductTest{
                     300.00,
                     "HIGH_DEMAND",
                     "image2.jpg",
-                    inventories3))
+                    inventories3)
+        )
     }
 }

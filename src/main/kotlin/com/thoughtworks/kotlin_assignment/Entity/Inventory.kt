@@ -1,4 +1,4 @@
-package com.thoughtworks.kotlin_assignment
+package com.thoughtworks.kotlin_assignment.Entity
 
 class Inventory(
     val id: String,

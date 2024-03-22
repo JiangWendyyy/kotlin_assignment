@@ -1,4 +1,4 @@
-package com.thoughtworks.kotlin_assignment
+package com.thoughtworks.kotlin_assignment.Entity
 
 class NormalProduct(
     override val id: String,
@@ -9,7 +9,7 @@ class NormalProduct(
     override val image: String,
     private var inventories:List<Inventory>
 ) : Product(id,SKU, name, price, type,image) {
-    override fun displayProductDetails():String{
+    fun displayProductDetails():String{
         val price = calculatePrice()
         val inventory = getInventory()
         return "普通商品$id:sku为：$SKU,价格为：$price,库存为：$inventory"
