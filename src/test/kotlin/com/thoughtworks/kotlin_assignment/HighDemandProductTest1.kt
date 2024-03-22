@@ -35,10 +35,10 @@ class HighDemandProductTest1{
             Inventory("1","ABC123","US_WEST",50)
         )
         return listOf(
-            HighDemandProduct("1", "ABC1", "Electronic Watch", 300.00, "HIGH_DEMAND", "image2.jpg", inventories1),
-            HighDemandProduct("2", "ABC2", "Electronic Watch", 300.00, "HIGH_DEMAND", "image2.jpg", inventories2),
+            HighDemandProduct(1, "ABC1", "Electronic Watch", 300.00, "HIGH_DEMAND", "image2.jpg", inventories1),
+            HighDemandProduct(2, "ABC2", "Electronic Watch", 300.00, "HIGH_DEMAND", "image2.jpg", inventories2),
                 HighDemandProduct(
-                    "3",
+                    3,
                     "ABC3",
                     "Electronic Watch",
                     300.00,
