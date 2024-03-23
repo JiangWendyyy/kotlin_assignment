@@ -34,6 +34,13 @@ class ProductService {
         }
     }
 
+    fun setProductsPrice(products: List<Product>) {
+        products.forEach {
+            val calculatePrice = it.calculatePrice()
+            it.setCalculatedPrice(calculatePrice)
+        }
+    }
+
     fun setProductInventory(inventories:List<Inventory>,products: List<Product>):List<Product> {
         val inventoryMap: Map<String, List<Inventory>> = inventories.groupBy { it.SKU }
         products.forEach {

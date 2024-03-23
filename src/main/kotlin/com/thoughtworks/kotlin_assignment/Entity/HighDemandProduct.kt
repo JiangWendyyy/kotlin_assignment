@@ -25,8 +25,4 @@ class HighDemandProduct(
             }
         }
     }
-
-    fun setCalculatedPrice(price: Double){
-        this.price = price
-    }
 }

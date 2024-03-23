@@ -17,7 +17,7 @@ class ProductServiceTest{
         assertEquals(30, haveSetInventoryProducts[0].getInventory())
         assertEquals(100,haveSetInventoryProducts[1].getInventory())
         assertEquals(50,haveSetInventoryProducts[2].getInventory())
-        productService.setHighDemandProductsPrice(products)
+        productService.setProductsPrice(products)
         assertEquals(450.0, haveSetInventoryProducts[0].price)
         assertEquals(360.0,haveSetInventoryProducts[1].price)
         assertEquals(300.0,haveSetInventoryProducts[2].price)

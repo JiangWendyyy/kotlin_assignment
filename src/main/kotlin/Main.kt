@@ -17,7 +17,7 @@ suspend fun main() {
     val haveSetInventoryProducts = productService.setProductInventory(allInventories, allProducts)
 
     // 根据内存计算产品价格
-    productService.setHighDemandProductsPrice(haveSetInventoryProducts)
+    productService.setProductsPrice(haveSetInventoryProducts)
 
     productService.display(haveSetInventoryProducts)
 }

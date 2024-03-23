@@ -20,4 +20,7 @@ open class Product (
     fun setInventoryList(inventoryList:List<Inventory>){
         this.inventories = inventoryList
     }
+    open fun setCalculatedPrice(calculatePrice: Double) {
+        this.price = calculatePrice
+    }
 }
